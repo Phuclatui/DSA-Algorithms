@@ -2,12 +2,12 @@
 
 ### Features:
 
-* Connect all vertices without cycle
-* reduce cost for linked
+* Connect all vertices without cycles
+* Minimize the total cost of connections
 
 ### DATA STRUCTURE
 
-* Algorithm: **kruskal**
+* Algorithm: **Kruskal's Algorithm**
 * Graph representation: Edge list
 
 ### COMPLEXITY ANALYSIS
