@@ -8,7 +8,7 @@
 ### DATA STRUCTURE
 
 * Algorithm: **Prim's Algorithm + Priority Queue**
-* Graph representation: Adjacency t
+* Graph representation: Adjacency list
 
 ### COMPLEXITY ANALYSIS
 
