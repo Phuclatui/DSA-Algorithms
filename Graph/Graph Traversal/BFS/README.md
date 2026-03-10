@@ -57,7 +57,3 @@ is guaranteed to be the shortest path from the source.
 
 
 
-Author
-
-Phạm Hoàng Phúc
-

@@ -44,7 +44,3 @@ All vertices visited during the DFS traversal belong to the same connected compo
 
 
 
-Author
-
-Phạm Hoàng Phúc
-
