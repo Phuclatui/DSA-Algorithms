@@ -35,9 +35,3 @@ The goal is to assign colors to vertices so that no two adjacent vertices share 
 
 
 
-Author
-
-Phạm Hoàng Phúc
-
-
-

@@ -41,7 +41,3 @@ If a negative cycle exists and is reachable from the start vertex:
 
 
 
-Author
-
-Phạm Hoàng Phúc
-

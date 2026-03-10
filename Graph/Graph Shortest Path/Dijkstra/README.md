@@ -29,9 +29,3 @@ The graph is represented using an adjacency list, and a priority queue (min-heap
 
 
 
-Author
-
-Phạm Hoàng Phúc
-
-
-
