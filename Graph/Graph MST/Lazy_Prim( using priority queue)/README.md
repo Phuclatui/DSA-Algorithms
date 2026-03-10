@@ -12,5 +12,5 @@
 
 ### COMPLEXITY ANALYSIS
 
-O(Elog(V))
+O(Elog(E))
 
