@@ -12,5 +12,14 @@
 
 ### COMPLEXITY ANALYSIS
 
-O(mlogm + mlogn)
+O(ElogE)
+
+
+
+sort: O(ElogE)
+Comparision: O(E)
+
+O(ElogE + E) = O(ElogE)
+
+
 
