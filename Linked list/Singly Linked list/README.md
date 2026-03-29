@@ -24,7 +24,7 @@ Insertion:
 
 
 
-Deletion
+Deletion:
 
 * deteleHead: O(1) in best case
 * deleteTail: O(n) in worst case
@@ -32,9 +32,9 @@ Deletion
 
 
 
-Other operations
+Other operations:
 
-count and check values: O(n) in worst case
+count and check values: O(n) in worst case.
 
 
 
