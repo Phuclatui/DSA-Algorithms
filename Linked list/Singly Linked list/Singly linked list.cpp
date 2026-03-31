@@ -157,6 +157,7 @@ void deleteX(const int& x, Node*& head)
 
 void show(Node* head)
 {
+	cout << "List: ";
 	if (head != nullptr)
 	{
 		Node* p = head;
@@ -204,39 +205,163 @@ void clearList(Node*& head)
 	}
 }
 
-
-
+void menu()
+{
+	cout << "\n------MENU---------\n";
+	cout << "1. Add head\n"
+		<< "2. Add tail\n"
+		<< "3. Add after\n"
+		<< "4. Add before\n"
+		<< "5. Delete head\n"
+		<< "6. Delete tail\n"
+		<< "7. Delete value\n"
+		<< "8. Search\n"
+		<< "9. Show list\n"
+		<< "10. Exit Program\n" << endl;
+}
 
 int main()
 {
 	Node* head;
 	init(head);
 
-	addHead(10, head);
-	addTail(25, head);
-	addHead(35, head);
-	addTail(40, head);
-	show(head);
-
-	int x; int index = 0;  cout << "Enter x to check: "; cin >> x;
-	if (checkValue(head, x, index))
-		cout << "The values had been existed at index " << index << endl;
-	else
-		cout << "The value dont exist!!!" << endl;
-
-	cout << "The list have " << countValues(head) << " elements " << endl;
-
-	addAfter(25, 100, head);
-	show(head);
-
-	addBefore(40, 11, head);
-	show(head);
-
-	cout << "Enter the value to delete: ";
-	cin >> x;
-	deleteX(x, head);
-	show(head);
+	int n, x, y, t;
+	int count = 0;
 
 
-	clearList(head);
+
+	do
+	{
+		show(head);
+		menu();
+		cout << "\nEnter your choose: ";
+		cin >> t;
+
+		switch (t)
+		{
+		case 1:
+		{
+			cout << "\033[32m" << "Enter -1 to exit to the menu: " << "\033[0m\n";
+			do
+			{
+				cout << "Enter x: ";
+				cin >> x;
+
+				if (x == -1)
+					break;;
+
+				addHead(x, head);
+
+				show(head);
+			} while (true);
+			break;
+		}
+
+		case 2:
+		{
+
+
+			cout << "\033[32m" << "Enter -1 to exit to the menu: " << "\033[0m\n";
+			do
+			{
+				cout << "Enter x: ";
+				cin >> x;
+
+				if (x == -1)
+					break;;
+
+				addTail(x, head);
+
+				show(head);
+			} while (true);
+			break;
+		}
+
+		case 3:
+		{
+			cout << "Enter value to add after : ";
+			cin >> x;
+			cout << "Enter value: ";
+			cin >> y;
+			addAfter(x, y, head);
+			show(head);
+
+			break;
+		}
+
+		case 4:
+		{
+			cout << "Enter value to add before : ";
+			cin >> x;
+			cout << "Enter value: ";
+			cin >> y;
+
+			addBefore(x, y, head);
+			show(head);
+
+			break;
+		}
+
+		case 5:
+		{
+			deleteHead(head);
+			show(head);
+
+			break;
+		}
+
+		case 6:
+		{
+			deleteTail(head);
+			show(head);
+
+			break;
+		}
+
+		case 7:
+		{
+
+			cout << "Enter value to delete : ";
+			cin >> x;
+			deleteX(x, head);
+			show(head);
+
+			break;
+		}
+
+		case 8:
+		{
+
+			cout << "Enter the value to search: ";
+			cin >> x;
+
+			if (checkValue(head,x, count))
+				cout << x << " at location " << count << endl;
+			else
+				cout << "Dont find q" << endl;
+			break;
+		}
+
+		case 9:
+		{
+			show(head); break;
+		}
+
+		case 10:
+		{
+			cout << "Exit successfully!!!" << endl;
+			clearList(head);
+			return 0;
+		}
+
+		default:
+		{
+			cout << "Enter again!!!!" << endl;
+			break;
+		}
+		}
+	} while (true);
+
+
+
 }
