@@ -7,7 +7,7 @@ void addArray(int array[])
 {
 	for (int i = 0; i < MAX; i++)
 	{
-		array[i] = rand() % 1000 + 1;
+		array[i] = rand() % MAX;
 	}
 }
 
