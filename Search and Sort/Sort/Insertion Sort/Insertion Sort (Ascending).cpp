@@ -7,7 +7,7 @@ void addArray(int array[])
 {
 	for (int i = 0; i < MAX; i++)
 	{
-		array[i] = rand() % 1000;
+		array[i] = rand() % MAX;
 	}
 }
 
@@ -32,7 +32,6 @@ void InsertionSort(int array[]) // Ascending
 			array[position + 1] = array[position];
 			position--;
 		}
-
 		array[position + 1] = value;
 	}
 }
@@ -49,7 +48,7 @@ int main()
 	showArray(array);
 
 
-	cout << "\nAfter Sort ";
+	cout << "\nAfter Sort: ";
 	InsertionSort(array);
 	showArray(array);
 
